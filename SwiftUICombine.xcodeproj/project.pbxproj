@@ -11,6 +11,10 @@
 		1F3878932D08A5B400108AAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3878922D08A5B400108AAB /* ContentView.swift */; };
 		1F3878952D08A5B500108AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F3878942D08A5B500108AAB /* Assets.xcassets */; };
 		1F3878982D08A5B500108AAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F3878972D08A5B500108AAB /* Preview Assets.xcassets */; };
+		1F3878A02D08A7B000108AAB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38789F2D08A7B000108AAB /* HomeView.swift */; };
+		1F3878A22D08A86200108AAB /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3878A12D08A86200108AAB /* EmployeeCell.swift */; };
+		1F3878A42D08A8E600108AAB /* EmployeeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3878A32D08A8E600108AAB /* EmployeeList.swift */; };
+		1F3878A62D08A97900108AAB /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3878A52D08A97900108AAB /* EmployeeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		1F3878922D08A5B400108AAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F3878942D08A5B500108AAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F3878972D08A5B500108AAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F38789F2D08A7B000108AAB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1F3878A12D08A86200108AAB /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		1F3878A32D08A8E600108AAB /* EmployeeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeList.swift; sourceTree = "<group>"; };
+		1F3878A52D08A97900108AAB /* EmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				1F3878902D08A5B400108AAB /* SwiftUICombineApp.swift */,
-				1F3878922D08A5B400108AAB /* ContentView.swift */,
+				1F38789E2D08A78B00108AAB /* Views */,
 				1F3878942D08A5B500108AAB /* Assets.xcassets */,
 				1F3878962D08A5B500108AAB /* Preview Content */,
+				1F3878A72D08AF9400108AAB /* Models */,
 			);
 			path = SwiftUICombine;
 			sourceTree = "<group>";
@@ -65,6 +74,25 @@
 				1F3878972D08A5B500108AAB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F38789E2D08A78B00108AAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F3878922D08A5B400108AAB /* ContentView.swift */,
+				1F38789F2D08A7B000108AAB /* HomeView.swift */,
+				1F3878A12D08A86200108AAB /* EmployeeCell.swift */,
+				1F3878A32D08A8E600108AAB /* EmployeeList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F3878A72D08AF9400108AAB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F3878A52D08A97900108AAB /* EmployeeModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F3878A02D08A7B000108AAB /* HomeView.swift in Sources */,
+				1F3878A22D08A86200108AAB /* EmployeeCell.swift in Sources */,
+				1F3878A42D08A8E600108AAB /* EmployeeList.swift in Sources */,
+				1F3878A62D08A97900108AAB /* EmployeeModel.swift in Sources */,
 				1F3878932D08A5B400108AAB /* ContentView.swift in Sources */,
 				1F3878912D08A5B400108AAB /* SwiftUICombineApp.swift in Sources */,
 			);
