@@ -16,7 +16,7 @@ class NetworkManager{
     private var cancellables = Set<AnyCancellable>()
     private let baseURL = "https://a00407a8-f46e-407e-b684-5d949532e7fc.mock.pstmn.io/api/v1/employees"
     
-    func getData<T: Decodable>(type: T.Type) -> Future<[T], Error> {
+    func getData<T: Decodable>(type: T.Type) -> Future<T, Error> {
         return Future { [weak self] promise in
             guard let self = self, let url = URL(string: self.baseURL) else {
                 return promise(.failure(NetworkError.invalidURL))
@@ -28,7 +28,7 @@ class NetworkManager{
                     }
                     return data
                 }
-                .decode(type: [T].self, decoder: JSONDecoder())
+                .decode(type: T.self, decoder: JSONDecoder())
                 .receive(on: RunLoop.main)
                 .sink { (completion) in
                     if case let .failure(error) = completion {
@@ -41,7 +41,9 @@ class NetworkManager{
                             promise(.failure(NetworkError.unknown))
                         }
                     }
-                } receiveValue: { promise(.success($0))}
+                } receiveValue: {
+                    promise(.success($0))
+                }
                 .store(in: &self.cancellables)
 
         }

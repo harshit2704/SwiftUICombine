@@ -15,6 +15,8 @@
 		1F3878A22D08A86200108AAB /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3878A12D08A86200108AAB /* EmployeeCell.swift */; };
 		1F3878A42D08A8E600108AAB /* EmployeeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3878A32D08A8E600108AAB /* EmployeeList.swift */; };
 		1F3878A62D08A97900108AAB /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3878A52D08A97900108AAB /* EmployeeModel.swift */; };
+		1F3878A92D0953FD00108AAB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3878A82D0953FD00108AAB /* NetworkManager.swift */; };
+		1F3878AC2D095A5100108AAB /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3878AB2D095A5100108AAB /* EmployeeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		1F3878A12D08A86200108AAB /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
 		1F3878A32D08A8E600108AAB /* EmployeeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeList.swift; sourceTree = "<group>"; };
 		1F3878A52D08A97900108AAB /* EmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
+		1F3878A82D0953FD00108AAB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1F3878AB2D095A5100108AAB /* EmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				1F3878942D08A5B500108AAB /* Assets.xcassets */,
 				1F3878962D08A5B500108AAB /* Preview Content */,
 				1F3878A72D08AF9400108AAB /* Models */,
+				1F3878AA2D0956BC00108AAB /* Managers */,
+				1F3878AD2D0A9A6200108AAB /* ViewModel */,
 			);
 			path = SwiftUICombine;
 			sourceTree = "<group>";
@@ -93,6 +99,22 @@
 				1F3878A52D08A97900108AAB /* EmployeeModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1F3878AA2D0956BC00108AAB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1F3878A82D0953FD00108AAB /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1F3878AD2D0A9A6200108AAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F3878AB2D095A5100108AAB /* EmployeeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,8 +190,10 @@
 				1F3878A02D08A7B000108AAB /* HomeView.swift in Sources */,
 				1F3878A22D08A86200108AAB /* EmployeeCell.swift in Sources */,
 				1F3878A42D08A8E600108AAB /* EmployeeList.swift in Sources */,
+				1F3878A92D0953FD00108AAB /* NetworkManager.swift in Sources */,
 				1F3878A62D08A97900108AAB /* EmployeeModel.swift in Sources */,
 				1F3878932D08A5B400108AAB /* ContentView.swift in Sources */,
+				1F3878AC2D095A5100108AAB /* EmployeeViewModel.swift in Sources */,
 				1F3878912D08A5B400108AAB /* SwiftUICombineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

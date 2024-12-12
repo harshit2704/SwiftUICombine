@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct EmployeeCell: View {
-    let onLongPress: () -> Void
+    let onLongPress: (Employee) -> Void
+    let employee: Employee
     
     var body: some View {
         HStack {
             GeometryReader { geometry in
-                AsyncImage(url: URL(string: "")) { image in
+                AsyncImage(url: URL(string: employee.profile_image ?? "")) { image in
                     image
                         .resizable()
                         .scaledToFill()
@@ -25,11 +26,11 @@ struct EmployeeCell: View {
             .frame(width: 50, height: 50)
             
             VStack(alignment: .leading) {
-                Text("Name: ")
+                Text("Name: \(employee.employee_name ?? "")")
                     .font(.headline)
-                Text("Age: ")
+                Text("Age: \(employee.employee_age ?? 00)")
                     .font(.subheadline)
-                Text("Salary: $")
+                Text("Salary: $\(employee.employee_salary ?? 00)")
                     .font(.subheadline)
             }
             .padding()
@@ -39,7 +40,7 @@ struct EmployeeCell: View {
             
         }
         .onLongPressGesture {
-            onLongPress()
+            onLongPress(employee)
         }
     }
 }

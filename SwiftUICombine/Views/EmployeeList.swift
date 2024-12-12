@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct EmployeeList: View {
-    let onLongPress: () -> Void
+    @ObservedObject var viewModel: EmployeeViewModel
+    let onLongPress: (Employee) -> Void
     
     var body: some View {
-        List(0...5, id: \.self){_ in
-            EmployeeCell(onLongPress: onLongPress)
+        List(viewModel.employees){ employee in
+            EmployeeCell(onLongPress: onLongPress, employee: employee)
                 .background(Color.white)
                 .cornerRadius(8)
                 .shadow(color: .gray.opacity(0.4), radius: 4, x: 0, y: 2)
